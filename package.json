@@ -1,0 +1,25 @@
+{
+  "name": "rabbitmq",
+  "version": "1.0.0",
+  "description": "A simple project for consume/publish RabbitMQ messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rguzmano/nodejs-rabbitmq.git"
+  },
+  "keywords": [
+    "nodejs",
+    "rabbitmq",
+    "queue",
+    "amqp"
+  ],
+  "author": "Rafael Guzmán Oyarzún",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rguzmano/nodejs-rabbitmq/issues"
+  },
+  "homepage": "https://github.com/rguzmano/nodejs-rabbitmq#readme"
+}
