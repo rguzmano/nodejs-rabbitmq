@@ -9,7 +9,7 @@ function fnConsumer(msg, callback) {
 // InitConnection of rabbitmq
 rabbitmqLib.InitConnection(() => {
     // start consumer worker when the connection to rabbitmq has been made
-    rabbitmqLib.StartConsumer("poc-delayed-queue", fnConsumer);
+    rabbitmqLib.StartConsumer("test-queue", fnConsumer);
     // start Publisher when the connection to rabbitmq has been made
     rabbitmqLib.StartPublisher();
 });
@@ -24,5 +24,5 @@ setTimeout(() => {
         }
     };
     // We send a message to queue
-    rabbitmqLib.PublishMessage("poc-delayed-exchange", "", "I'm a string!", options);
+    rabbitmqLib.PublishMessage("test-exchange", "", "test message from nodejs", options);
 }, 5000);
